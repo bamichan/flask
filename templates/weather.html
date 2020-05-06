@@ -1,0 +1,18 @@
+{% extends "bace.html" %}
+{% block content %}
+<body>
+  <div>
+    <h1>今日の天気</h1>
+    <h4>({{date}})</h4>
+  </div>
+
+  <div>
+    <p>{{title}}は {{tenki}}</p>
+    <!-- <p>{{weather}}</p> -->
+    <p>最高気温は {{temperature_max}} °C</p>
+    <p>最低気温は {{temperature_min}} °C</p>
+    <p>不明の場合は空欄</p>
+  </div>
+
+</body>
+{% endblock %}
